@@ -1,0 +1,26 @@
+{
+  "id": "posts",
+  "type": "SharedSlice",
+  "name": "Posts",
+  "description": "Posts",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "post": {
+          "type": "Link",
+          "config": {
+            "label": "post",
+            "select": "document"
+          }
+        }
+      }
+    }
+  ]
+}
