@@ -5,8 +5,21 @@
 
 <section>
   {#each slice.items as item}
-	  <h2>{item.post.data.title}</h2>
-	  <p></p>
+    <ul>
+      <li>
+        <a href="/{item.post.uid}">
+          <div>
+            <img src="{item.post.data.foto.url}" alt="">
+          </div>
+          <h2>{item.post.data.title}</h2>
+          <p>{item.post.data.beschrijving[0].text}</p>
+          <span>door {item.post.data.auteur}</span>
+        </a>
+      </li>
+    </ul>
   {/each}
 </section>
 
+<pre>
+  {JSON.stringify(slice,null,2)}
+</pre>

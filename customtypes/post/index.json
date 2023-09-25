@@ -43,6 +43,29 @@
           "label": "auteur",
           "placeholder": ""
         }
+      },
+      "foto": {
+        "type": "Image",
+        "config": {
+          "label": "foto",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "gastlezer": {
+        "type": "Text",
+        "config": {
+          "label": "gastlezer",
+          "placeholder": ""
+        }
+      },
+      "link": {
+        "type": "Link",
+        "config": {
+          "label": "link",
+          "placeholder": "",
+          "select": null
+        }
       }
     }
   }
