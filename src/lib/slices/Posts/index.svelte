@@ -20,6 +20,6 @@
   {/each}
 </section>
 
-<pre>
+<!-- <pre>
   {JSON.stringify(slice,null,2)}
-</pre>
+</pre> -->
