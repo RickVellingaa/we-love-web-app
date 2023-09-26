@@ -19,15 +19,4 @@
         box-sizing: border-box;
         font-family: sans-serif;
     }
-
-    .container {
-        position: relative;
-        width: 100%;
-        max-width: 1441px;
-        padding-left: 2em;
-        padding-right: 2em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
 </style>

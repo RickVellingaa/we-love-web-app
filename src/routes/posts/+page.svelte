@@ -13,6 +13,12 @@
 </section>
 
 <style>
+    :global(*) {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
     .content-container {
         position: relative;
         color: var(--txt-clr);
