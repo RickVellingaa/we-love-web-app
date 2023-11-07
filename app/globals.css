@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+
+* {
+  --white: #ffffff;
+  --lightgreen: #00f4c0;
+  --darkgreen: #184c57;
+
+  --ff: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff);
+  color: var(--white);
+  background-image: radial-gradient(
+      circle farthest-corner at 70% 40%,
+      rgba(48, 199, 205, 0.1),
+      hsla(0, 0%, 100%, 0)
+    ),
+    radial-gradient(circle farthest-corner at 70% 40%, #2a5964, #061a1f);
+}
+
+.image {
+  background-image: url("../public/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 20%;
+}
+
+.imagegrid {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+
+nav li a:hover {
+  color: var(--lightgreen);
+  transition: 0.4s;
+  border-color: var(--lightgreen);
+}
+
+li a {
+  transition: 0.4s;
+}
+
+.grid-vv {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  gap: 1em;
+
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+
+.hoverlink:hover {
+  opacity: 1;
+  transition: 0.4s;
+  color: var(--lightgreen);
+}
+
+button:hover {
+  background: transparent;
+  color: var(--lightgreen);
+  border: 1px solid var(--lightgreen);
+  transition: 0.4s;
+  outline: none;
+}
+
+button {
+  transition: 0.4s;
+  outline: none;
+  border: none;
+}
+
+.grid-blog {
+  grid-template-columns: 1fr 2fr;
+}
+
+@media only screen and (max-width: 1215px) {
+  .px-52 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .web {
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  button {
+    display: none;
+  }
+
+  .mr-12 {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .web {
+    padding-bottom: 4rem;
+  }
+  .px-52 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mobile {
+    display: none;
+  }
+  .logo {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
