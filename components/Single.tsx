@@ -106,6 +106,14 @@ const Single = () => {
           </div>
         </div>
       </div>
+      <article className="w-full h-full px-52">
+        <h3 className="text-3xl text-licht-groen mb-2">Meer over het blog</h3>
+        <p>{blogData.beschrijving}</p>
+        {/* <h3 className="text-3xl text-licht-groen mt-4 mb-2">
+          Wat heb ik ervan geleerd?
+        </h3> */}
+        <p></p>
+      </article>
     </section>
   );
 };
